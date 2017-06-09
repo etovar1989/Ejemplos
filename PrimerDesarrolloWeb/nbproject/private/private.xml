@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Ejercicios%20Java%20EE/PrimerDesarrolloWeb/web/index.jsp</file>
-            <file>file:/D:/Ejercicios%20Java%20EE/PrimerDesarrolloWeb/web/salida.jsp</file>
+            <file>file:/D:/Ejercicios%20Java%20EE/Repositorio/Ejemplos/PrimerDesarrolloWeb/web/salida.jsp</file>
+            <file>file:/D:/Ejercicios%20Java%20EE/Repositorio/Ejemplos/PrimerDesarrolloWeb/src/java/modelo/PrimerDesarrolloWeb/JavaBeans/DatosEncuesta/DatosEncuesta.java</file>
+            <file>file:/D:/Ejercicios%20Java%20EE/Repositorio/Ejemplos/PrimerDesarrolloWeb/web/index.jsp</file>
+            <file>file:/D:/Ejercicios%20Java%20EE/Repositorio/Ejemplos/PrimerDesarrolloWeb/src/java/controlador/PrimerDesarrolloWeb/ServerltController/ServerltController.java</file>
         </group>
     </open-files>
 </project-private>

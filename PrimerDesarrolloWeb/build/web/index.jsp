@@ -14,7 +14,12 @@
     <body>
         <h1>Bienbenido a la encuesta de desarrolladores</h1>
         <p>Indica el leguaje de programacion con el que estas familiarizado</p>
-        <form action="salida.jsp"> <!--el action me permite reenviar los datos del formulario a otra pagina web-->
+        
+        <!--Se cambian el metodo action="salida.jsp por el metodo tipo MVC que 
+        seria utilizar el Controlador y el Modelo ServerltController"-->
+        <!--el action me permite reenviar los datos del formulario a otra pagina web-->
+        <form action="ServerltController" method="post"> <!--Se utiliza method="post" por seguridad
+            debido a que este adiferencia del get, no muestra los parametros en la navegacion-->
             <table border="0">
                <!-- <thead> <!--encabezado de la tabla>
                     <tr>

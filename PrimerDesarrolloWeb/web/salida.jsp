@@ -14,10 +14,22 @@
     <body>
         <h1>Gracias por realizar nuestra encuesta</h1>
         <p>
+            
+            <!--PARTE DEL CODIGO VIEJO, QUE NO ES MVC-->
             <!--al exprecion <..% sin los punto sirve para abrir los serverlet-->
-            <%= request.getParameter("nombreCompleto")%>, <!--el "request.getParamerter()" es un serverlet que me permite traer los datos de otra pagina-->
-            Nos ha indicado que esta familiarizado con los siguiente leguajes 
-            de programacion:</p>
+            <!--<..%= request.getParameter("nombreCompleto")%..>--><!--el "request.getParamerter()" es un serverlet que me permite traer los datos de otra pagina-->
+            
+            <!--CODIGO NUEVO MCV-->
+            <!--Importamos el JavaBenas-->
+            <jsp:useBean id="DatosEncuesta" scope="request" class="Modelo.PrimerDesarrolloWeb.JavaBeans.DatosEncuesta.DatosEncuesta" />
+            
+            <!--Se trean los datos del nombreCompleto-->
+            <jsp:getProperty name="DatosEncuesta" property="nombreCompleto" />
+            ,Nos ha indicado que esta familiarizado con los siguiente leguajes 
+            de programacion:
+            
+        
+        </p>
         <ul> <!--Se crea una lista-->
             
             <!--scriptles que permite utilizar codigo java
@@ -27,7 +39,12 @@
             el resultado de dicho recorrido sera mostrado en una lista de html <li>
             hasta que llegue al ultimo dato del arreglo-->
             <%
-                String [] lenguaje= request.getParameterValues("proLeng"); 
+                String [] lenguaje=
+                        DatosEncuesta.getProLeng(); 
+                        //COMENTARIO: este el el request viejo que se hace directamente a al html
+                        //request.getParameterValues("proLeng")
+                
+                
                 if(lenguaje !=null){
                     for(int i=0; i<lenguaje.length; i++)
                     {                   
